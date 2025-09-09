@@ -76,8 +76,14 @@ const MeditationView: React.FC<MeditationViewProps> = ({ isSpecific = false }) =
         <div className="container">
           <header className="header">
             <h1 className="title">
-              <img src="/aurelius-portrait.svg" alt="Marcus Aurelius" className="title-portrait" />
-              meditations
+              <button 
+                className="title-button"
+                onClick={loadNewRandomMeditation}
+                aria-label="Load new meditation"
+              >
+                <img src="/aurelius-portrait.svg" alt="Marcus Aurelius" className="title-portrait" />
+                meditations
+              </button>
             </h1>
           </header>
 
@@ -113,8 +119,14 @@ const MeditationView: React.FC<MeditationViewProps> = ({ isSpecific = false }) =
       <div className="container">
         <header className="header">
           <h1 className="title">
-            <img src="/aurelius-portrait.svg" alt="Marcus Aurelius" className="title-portrait" />
-            meditations
+            <button 
+              className="title-button"
+              onClick={loadNewRandomMeditation}
+              aria-label="Load new meditation"
+            >
+              <img src="/aurelius-portrait.svg" alt="Marcus Aurelius" className="title-portrait" />
+              meditations
+            </button>
           </h1>
         </header>
 

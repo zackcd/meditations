@@ -7,8 +7,14 @@ const NotFound: React.FC = () => {
       <div className="container">
         <header className="header">
           <h1 className="title">
-            <img src="/aurelius-portrait.svg" alt="Marcus Aurelius" className="title-portrait" />
-            meditations
+            <Link 
+              to="/" 
+              className="title-button"
+              style={{ textDecoration: 'none' }}
+            >
+              <img src="/aurelius-portrait.svg" alt="Marcus Aurelius" className="title-portrait" />
+              meditations
+            </Link>
           </h1>
         </header>
 
