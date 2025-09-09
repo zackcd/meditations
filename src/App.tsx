@@ -30,13 +30,18 @@ const App: React.FC = () => {
     return '';
   };
 
-  const loadNewMeditation = () => {
+  const loadNewMeditation = async () => {
     setIsLoading(true);
-    // Add a small delay for better UX
-    setTimeout(() => {
-      setMeditation(getRandomMeditation());
+    try {
+      // Add a small delay for better UX
+      await new Promise(resolve => setTimeout(resolve, 300));
+      const newMeditation = await getRandomMeditation();
+      setMeditation(newMeditation);
+    } catch (error) {
+      console.error('Error loading meditation:', error);
+    } finally {
       setIsLoading(false);
-    }, 300);
+    }
   };
 
   useEffect(() => {
