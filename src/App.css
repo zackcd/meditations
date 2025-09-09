@@ -87,25 +87,19 @@
   font-size: 1.5rem;
   line-height: 1.7;
   color: var(--color-text);
-  margin-bottom: 2rem;
   font-style: italic;
 }
 
-.meditation-attribution {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
 .meditation-source {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
   font-family: var(--font-family-sans);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--color-text-light);
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.025em;
+  opacity: 0.5;
 }
 
 @keyframes fadeIn {

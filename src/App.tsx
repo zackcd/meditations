@@ -53,6 +53,12 @@ const App: React.FC = () => {
           </h1>
         </header>
 
+        {!isLoading && meditation && (
+          <div className="meditation-source">
+            {toRoman(meditation.book)}.{meditation.passage}
+          </div>
+        )}
+
         <main className="main">
           {isLoading ? (
             <div className="loading">
@@ -62,11 +68,6 @@ const App: React.FC = () => {
             <div className="meditation-card">
               <div className="meditation-text">
                 {meditation.text}
-              </div>
-              <div className="meditation-attribution">
-                <div className="meditation-source">
-                  {toRoman(meditation.book)}.{meditation.passage}
-                </div>
               </div>
             </div>
           ) : null}
