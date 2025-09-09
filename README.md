@@ -1,6 +1,6 @@
 # Meditations
 
-A beautiful, simple website built with React and TypeScript that displays random entries from Marcus Aurelius' *Meditations*.
+Displays random entries from Marcus Aurelius' *Meditations*.
 
 ## About Marcus Aurelius
 
